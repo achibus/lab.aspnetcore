@@ -1,0 +1,183 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-03-13T20:53:56.237Z",
+	"__export_source": "insomnia.desktop.app:v5.14.9",
+	"resources": [
+		{
+			"_id": "wrk_de1e41af7fda4bf78d60a78614cb6d81",
+			"created": 1518182785961,
+			"description": "",
+			"modified": 1518182785961,
+			"name": "Lab",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_26560bbb737144178b5c13644d987fda",
+			"color": null,
+			"created": 1518182786178,
+			"data": {
+				"baseAddress": "http://localhost:60698/api/"
+			},
+			"isPrivate": false,
+			"modified": 1520974152638,
+			"name": "New Environment",
+			"parentId": "wrk_de1e41af7fda4bf78d60a78614cb6d81",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_1e75b2841bc14ad5ab52bbc105a38173",
+			"cookies": [],
+			"created": 1518182786277,
+			"modified": 1518182786277,
+			"name": "Default Jar",
+			"parentId": "wrk_de1e41af7fda4bf78d60a78614cb6d81",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_fc2ed731599946008655f49cd2bce627",
+			"created": 1520949309297,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1520949309297,
+			"modified": 1520949309297,
+			"name": "aspCore",
+			"parentId": "wrk_de1e41af7fda4bf78d60a78614cb6d81",
+			"_type": "request_group"
+		},
+		{
+			"_id": "env_5ead41c5ea4c4a0c8cb3286a1086e7f3",
+			"color": null,
+			"created": 1520974175427,
+			"data": {
+				"baseAddress": "http://localhost:60698/api/"
+			},
+			"isPrivate": false,
+			"modified": 1520974183727,
+			"name": "IIS Express",
+			"parentId": "env_26560bbb737144178b5c13644d987fda",
+			"_type": "environment"
+		},
+		{
+			"_id": "req_88e21ea933994944b47389b5dac75df1",
+			"authentication": {
+				"disabled": false,
+				"password": "",
+				"type": "ntlm",
+				"username": ""
+			},
+			"body": {},
+			"created": 1520949316538,
+			"description": "",
+			"headers": [],
+			"metaSortKey": -1520949316538,
+			"method": "GET",
+			"modified": 1520974215626,
+			"name": "item",
+			"parameters": [],
+			"parentId": "fld_fc2ed731599946008655f49cd2bce627",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ baseAddress  }}todo/1",
+			"_type": "request"
+		},
+		{
+			"_id": "req_f3217022c2ba4ea397fc8ed026850005",
+			"authentication": {
+				"disabled": false,
+				"password": "",
+				"type": "ntlm",
+				"username": ""
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"Name\": \"walk dog\",\n    \"IsComplete\": true\n}"
+			},
+			"created": 1520972705185,
+			"description": "",
+			"headers": [
+				{
+					"disabled": false,
+					"id": "pair_7a46d481a5c045c99539acb4d2f6bedb",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"metaSortKey": -1520175404482.5,
+			"method": "POST",
+			"modified": 1520974204105,
+			"name": "item",
+			"parameters": [],
+			"parentId": "fld_fc2ed731599946008655f49cd2bce627",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ baseAddress  }}todo",
+			"_type": "request"
+		},
+		{
+			"_id": "req_6ef171f4de994d148cf9abd23c75e1a7",
+			"authentication": {
+				"disabled": false,
+				"password": "",
+				"type": "ntlm",
+				"username": ""
+			},
+			"body": {},
+			"created": 1520972730810,
+			"description": "",
+			"headers": [],
+			"metaSortKey": -1520949316588,
+			"method": "GET",
+			"modified": 1520974222148,
+			"name": "items",
+			"parameters": [],
+			"parentId": "fld_fc2ed731599946008655f49cd2bce627",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ baseAddress  }}todo",
+			"_type": "request"
+		},
+		{
+			"_id": "req_607eaf58535e41e78aa889ffe62e2d30",
+			"authentication": {
+				"disabled": false,
+				"password": "",
+				"type": "ntlm",
+				"username": ""
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t  \"id\": 1,\n    \"Name\": \"walk dog\",\n    \"IsComplete\": true\n}"
+			},
+			"created": 1520973736765,
+			"description": "",
+			"headers": [
+				{
+					"disabled": false,
+					"id": "pair_7a46d481a5c045c99539acb4d2f6bedb",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"metaSortKey": -1519788448454.75,
+			"method": "PUT",
+			"modified": 1520974229363,
+			"name": "item",
+			"parameters": [],
+			"parentId": "fld_fc2ed731599946008655f49cd2bce627",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ baseAddress  }}todo/1",
+			"_type": "request"
+		}
+	]
+}
